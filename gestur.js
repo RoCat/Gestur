@@ -5,6 +5,7 @@ var Gesture = function (elem) {
     this.init = function () {
         var self = this;
         elem.addEventListener('touchstart', self.onTouchStart = function (e) {
+            console.log('touchstart');
             self.gestureType = 1;
             var finger = {
                 startX: e.changedTouches[0].pageX,
